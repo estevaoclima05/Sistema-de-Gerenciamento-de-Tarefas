@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: src/main/java/Dockerfile
+    container_name: tarefas-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/gerenciamentotarefasbd
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=lima12345
+    networks:
+      - tarefas-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: src/main/resources/static/Dockerfile
+    container_name: tarefas-frontend
+    ports:
+      - "80:80"
+    networks:
+      - tarefas-network
+
+  postgres:
+    image: postgres:latest
+    container_name: tarefas-db
+    environment:
+      POSTGRES_DB: gerenciamentotarefasbd
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: lima12345
+    ports:
+      - "5432:5432"
+    networks:
+      - tarefas-network
+
+networks:
+  tarefas-network:
+    driver: bridge
