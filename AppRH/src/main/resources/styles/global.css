@@ -1,0 +1,118 @@
+*{
+    font-family: "Raleway", sans-serif;
+    
+}
+body{
+    background-color: #ededed;
+}
+.sidebar {
+  height: 100vh;
+  padding-top: 20px;
+  position: fixed;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  background-color: #110f25;
+}
+li {
+  margin-bottom: 20px;
+}
+.nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.nav-link span{
+margin-left: 30px;
+}
+#titulo{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.nav-link:hover {
+  color: #ccc;
+}
+
+.col-md-10 {
+  margin-left: 20.7%;
+}
+.content{
+    margin-left: 20%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-top: 1%;
+    padding: 20px 40px;
+    width: 60%;
+
+}
+.content-cadastro{
+    margin-left: 5%;
+    height: 130%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-top: 1%;
+    padding: 20px 40px;
+   
+}
+.card-funcionario{
+    background-color: #b8d2f9;
+    border: 1px solid #b8d2f9;
+    color: #2c2c2c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-funcionario div h3{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+.card-funcionario div p{
+    font-size: 0.8rem;
+}
+.card-vagas{
+    background-color: #aadcc4;
+    border: 1px solid #aadcc4;
+    color: #2c2c2c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-vagas div h3{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+.card-vagas div p{
+    font-size: 0.8rem;
+}
+.button-lista{
+    background-color: #fff;
+    color: #2c2c2c;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.button-cadastrar{
+    background-color: #429343;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.form-group div label{
+    margin-bottom: 10px;
+}
+.form-group div input{
+    margin-bottom: 10px;
+}
